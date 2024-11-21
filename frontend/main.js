@@ -1,14 +1,16 @@
-let task_arr = [
-    {   text: 'Сделать приложение',
-        status: false,
-    },
-    {   text: 'Купить продукты',
-        status: false,
-    },
-    {   text: 'Погулять с собакой',
-        status: true,
-    }
-];
+// let task_arr = [
+//     {   text: 'Сделать приложение',
+//         status: false,
+//     },
+//     {   text: 'Купить продукты',
+//         status: false,
+//     },
+//     {   text: 'Погулять с собакой',
+//         status: true,
+//     }
+// ];
+import { select } from "./fetch/select.js";
+select();
 localStorage.setItem("1", JSON.stringify(task_arr));
 let arr = JSON.parse(localStorage.getItem("1")) || task_arr;
 console.log(arr,task_arr);

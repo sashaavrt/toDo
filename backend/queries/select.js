@@ -11,6 +11,4 @@ export function select (req, res) {
         return res.json(results);  
     }
 );
-
-connection.end();
 }
